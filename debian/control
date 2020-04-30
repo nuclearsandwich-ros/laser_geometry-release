@@ -1,0 +1,13 @@
+Source: ros-verystable-laser-geometry
+Section: misc
+Priority: optional
+Maintainer: William Woodall <william@osrfoundation.org>
+Build-Depends: debhelper (>= 9.0.0), libeigen3-dev, ros-verystable-ament-cmake, ros-verystable-ament-cmake-cppcheck, ros-verystable-ament-cmake-cpplint, ros-verystable-ament-cmake-gmock, ros-verystable-ament-cmake-gtest, ros-verystable-ament-cmake-lint-cmake, ros-verystable-ament-cmake-uncrustify, ros-verystable-eigen3-cmake-module, ros-verystable-rclcpp, ros-verystable-sensor-msgs, ros-verystable-tf2, ros-verystable-ros-workspace
+Homepage: http://ros.org/wiki/laser_geometry
+Standards-Version: 3.9.2
+
+Package: ros-verystable-laser-geometry
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libeigen3-dev, ros-verystable-ament-cmake, ros-verystable-eigen3-cmake-module, ros-verystable-rclcpp, ros-verystable-sensor-msgs, ros-verystable-tf2, ros-verystable-ros-workspace
+Description: This package contains a class for converting from a 2D laser scan as defined by sensor_msgs/LaserScan into a point cloud as defined by sensor_msgs/PointCloud or sensor_msgs/PointCloud2.
+ In particular, it contains functionality to account for the skew resulting from moving robots or tilting laser scanners.
